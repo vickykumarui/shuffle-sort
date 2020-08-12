@@ -1,0 +1,176 @@
+.container{
+    background-color: #EFEFEF;
+    height: 550px;
+    width: 650px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.container .game-section{
+    width: 100%;
+    display: flex;
+}
+
+.game-section .grid-board{
+    width: 450px;
+}
+
+.game-section .grid-cell-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game-section .grid-board i{
+    position: relative;
+    top: 15px;
+    left: 50%;
+}
+
+.game-section .grid-control{
+    width: 200px;
+}
+.title{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-control button{
+    background-color: #72C3DC;
+    border: none;
+    width: 80%;
+    height: 40px;
+    border-radius: 5%;
+    box-shadow: 0px 5px #2B8EAD;
+    margin-top: 20px;
+    margin-left: 10%;
+    outline: none;
+    color: #FFFFFF;
+}
+
+.grid-board .grid-cell-section .cell {
+    height: 150px;
+    flex: 1 0 33%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 150px;
+    color: #FFFFFF;
+}
+
+
+
+.bgColor6F98A8 {
+    background-color: #6F98A8;
+}
+
+.bgColor2B8EAD {
+    background-color: #2B8EAD;
+}
+
+.bgColor2F454E {
+    background-color: #2F454E;
+}
+
+.bgColorBFBFBF {
+    background-color: #BFBFBF;
+}
+.grid-control-mobile{
+    display: none;
+}
+
+/*
+mobile view
+*/
+
+@media only screen and (max-width: 376px) {
+    body{
+        margin: 0px;
+        border: 10px solid black;
+        border-radius: 5px;
+    }
+    .title{
+        background-color: #333333;
+        width: 100%;
+        color: #FFFFFF;
+        height: 50px;
+    }
+
+    .container{
+        width: 95%;
+        background-color: #FFFFFF;
+    }
+
+    .grid-board .grid-cell-section .cell {
+        height: 40px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 40px;
+        margin-bottom: 5px;
+        color: #000000;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .game-section .grid-cell-section {
+        display: block;
+    }
+
+    .container .game-section {
+        width: 100%;
+        display: block;
+    }
+
+    .game-section .grid-board {
+        width: 100%;
+    }
+
+    .bgColor6F98A8 {
+        background-color: #EFEFEF;
+        border-left: 5px solid #6F98A8;
+    }
+    
+    .bgColor2B8EAD {
+        background-color: #EFEFEF;
+        border-left: 5px solid #2B8EAD;
+    }
+    
+    .bgColor2F454E {
+        background-color: #EFEFEF;
+        border-left: 5px solid #2F454E;
+    }
+    
+    .bgColorBFBFBF {
+        background-color: #EFEFEF;
+        border-left: 5px solid #BFBFBF;
+    }
+
+    .hidden-xs{
+        display: none;
+    }
+
+    .grid-control-mobile{
+        width: 100%;
+        display: flex;
+    }
+
+    .grid-control-mobile button{
+        background-color: #72C3DC;
+        border: none;
+        width: 30%;
+        height: 40px;
+        border-radius: 5%;
+        box-shadow: 0px 5px #2B8EAD;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 15%;
+        outline: none;
+        color: #FFFFFF;
+    }
+
+    .game-section .grid-board i {
+        left: 25%;
+    }
+  }
